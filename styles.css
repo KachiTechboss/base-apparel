@@ -84,11 +84,11 @@ b{
 button{
     background:  hsl(0, 93%, 68%) ;
     border: none;
-    width: 70px;
-    margin-top: .1rem;
+    width: 55px;
+    margin-top: -.1rem;
     border-radius: 40%;
     color: white;
-    margin-left: -4rem;
+    margin-left: -3rem;
     font-weight: 700;
 }
 .button{
