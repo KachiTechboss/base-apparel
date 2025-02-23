@@ -84,10 +84,9 @@ b{
 button{
     background:  hsl(0, 93%, 68%) ;
     border: none;
-    width: 78px;
+    width: 70px;
     margin-top: .1rem;
-    height: 50px;
-    border-radius: 38%;
+    border-radius: 40%;
     color: white;
     margin-left: -4rem;
     font-weight: 700;
