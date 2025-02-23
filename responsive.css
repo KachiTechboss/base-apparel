@@ -90,7 +90,7 @@
         padding-right: 1rem;
     }
     button{
-        background:  hsl(0, 93%, 68%) ;
+        background: hsl(0, 36%, 70%) ;
         border: none;
         width: 70px;
         margin-top: .1rem;
@@ -109,6 +109,6 @@
         margin-left: 0;
         margin-top: 2rem;
     }
-    
+
    
 }
