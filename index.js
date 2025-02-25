@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             errorMessage.style.display = 'none';
             // Handle successful form submission (e.g., send data to server)
             console.log('Form submitted successfully with email:', emailValue);
+            alert("successfully submitted");
         }
     });
 
