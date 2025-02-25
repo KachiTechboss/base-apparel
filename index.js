@@ -13,9 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
             showError('The email address is not formatted correctly.');
         } else {
             errorMessage.style.display = 'none';
+            emailInput.classList.remove('input-error');
             // Handle successful form submission (e.g., send data to server)
             console.log('Form submitted successfully with email:', emailValue);
-            alert("successfully submitted");
+            alert('Email successfully submitted!');
         }
     });
 
