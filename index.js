@@ -1,32 +1,48 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('email-form');
-    const emailInput = form.querySelector('.input-m');
-    const errorMessage = form.querySelector('.error-message');
-
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const emailValue = emailInput.value.trim();
-
-        if (!emailValue) {
-            showError('The input field is empty.');
-        } else if (!isValidEmail(emailValue)) {
-            showError('The email address is not formatted correctly.');
-        } else {
-            errorMessage.style.display = 'none';
-            emailInput.classList.remove('input-error');
-            // Handle successful form submission (e.g., send data to server)
-            console.log('Form submitted successfully with email:', emailValue);
-            alert('Email successfully submitted!');
-        }
+$(document).ready(function () {
+    // use keyup event on email field
+    $("#email").keyup(function () {
+      if (validateEmail()) {
+        // if the email is validated
+        // setting the border green
+        $("#email").css("border", "2px solid green");
+        // and set label
+        $("#emailMsg").html("<p class='text-success'>Valid</p>").hide();
+        $("#errorIcon").hide();
+      } else {
+        // if the email is not validated
+        // set border red
+        $("#email").css("border", "2px solid red");
+        $("#emailMsg").html(
+          "<p class='text-danger'>Please provide a valid email</p>"
+        ).show();
+        $("#errorIcon").show();
+      }
     });
 
-    function showError(message) {
-        errorMessage.textContent = message;
-        errorMessage.style.display = 'block';
-    }
-
-    function isValidEmail(email) {
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailPattern.test(email);
-    }
+    $("#errorIcon").hide();
+    $("#btn").click(function () {
+      const email = $("#email").val();
+      if (validateEmail()) {
+        alert("Successfully submitted 👍");
+        location.reload();
+      } else {
+        $("#errorIcon").show();
+        $("#email").css("border", "2px solid red");
+        $("#emailMsg").html(
+          "<p class='text-danger'>Please provide a valid email</p>"
+        ).show();
+      }
+    });
 });
+
+function validateEmail() {
+  // get value of input email
+  var email = $("#email").val();
+  // use regular expression
+  var reg = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+  if (reg.test(email)) {
+    return true;
+  } else {
+    return false;
+  }
+}

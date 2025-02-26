@@ -29,9 +29,12 @@
             <p>Hello fellow shoppers? We're currently building our new fashion store. Add your email below to stay up-to-date with announcement and our launch deals</p>
         </div>
        <form id="email-form" class="EMAIL">
-            <input type="email" id="email" class="input-m" placeholder="Email Address" required>
-            <button type="submit" class="btn"><img src="images/icon-arrow.svg" alt="icon-arrow"></button>
-            <p class="error-message" style="display: none; color: red;">Please enter a valid email address.</p>
+            <div class="input-container">
+                <input type="email" id="email" class="input-m" placeholder="Email Address" required>
+                <img src="images/icon-error.svg" alt="error-icon" id="errorIcon" class="error-icon" style="display: none;">
+            </div>
+            <button type="button" id="btn" class="btn"><img src="images/icon-arrow.svg" alt="icon-arrow"></button>
+            <p id="emailMsg" class="error-message" style="display: none; color: red;">Please provide a valid email.</p>
         </form>
      </div>
      <div class="image-class">
@@ -39,6 +42,8 @@
      </div> 
 
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
