@@ -137,7 +137,7 @@ button:hover{
     display: none;
 }
 
-.error-message {
+.text-danger {
     margin-top: 5px;
     color: hsl(0, 93%, 68%);
     font-size: 1em;

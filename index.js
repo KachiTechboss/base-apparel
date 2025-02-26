@@ -27,7 +27,7 @@ $(document).ready(function () {
         location.reload();
       } else {
         $("#errorIcon").show();
-        $("#email").css("border", "2px solid red");
+        $("#email").css("border", "2px solid  hsl(0, 93%, 68%)");
         $("#emailMsg").html(
           "<p class='text-danger'>Please provide a valid email</p>"
         ).show();
