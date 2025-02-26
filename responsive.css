@@ -74,6 +74,7 @@
         margin-bottom: 2rem;
         outline: none;
         display: flex;
+        padding-right: 2rem;
     }
     ::placeholder{
         color:  hsl(0, 36%, 70%);
@@ -90,14 +91,17 @@
         padding-right: 1rem;
     }
     button{
-        background: hsl(0, 36%, 70%) ;
+        background:  hsl(0, 93%, 68%) ;
         border: none;
-        width: 70px;
-        margin-top: .1rem;
+        width: 55px;
+        position: static;
+        margin-top: -.1rem;
         border-radius: 40%;
         color: white;
-        margin-left: -4rem;
+        display: inline-block;
         font-weight: 700;
+        z-index: 2;
+        margin-left: -2rem;
     }
     .button{
         font-weight: 700;
@@ -109,6 +113,4 @@
         margin-left: 0;
         margin-top: 2rem;
     }
-
-   
 }
