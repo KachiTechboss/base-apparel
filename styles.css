@@ -1,18 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
-    background: 
-      linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)), 
+  }
+  body {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
       linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom; 
+    background-position: bottom;
     position: relative;
-} 
-.bg-pattern-desktop {
+  }
+  .bg-pattern-desktop {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,104 +20,100 @@ body {
     max-width: 100%;
     max-height: 100%;
     z-index: -1; /* Ensure the image is behind other content */
-}
-main{
+  }
+  main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: div1 div2;
     overflow: hidden;
     font-family: "Josefin Sans", serif;
-
-}
-@keyframes fadeFromRight {
+  }
+  @keyframes fadeFromRight {
     from {
-        opacity: 0;
-        transform: translateX(30px);
+      opacity: 0;
+      transform: translateX(30px);
     }
     to {
-        opacity: 1;
-        transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
     }
-}
-.first-container{
+  }
+  .first-container {
     margin-left: 7rem;
     margin-bottom: -3rem;
     animation: fadeFromRight 1s ease-in-out;
-}
-.logo-img{
+  }
+  .logo-img {
     width: 250px;
     margin-top: 4rem;
-}
-.text-container{
+  }
+  .text-container {
     margin-top: 7rem;
-}
-.text-container h1{
-    color:  hsl(0, 36%, 70%);
+  }
+  .text-container h1 {
+    color: hsl(0, 36%, 70%);
     width: 100px;
     letter-spacing: 15px;
-}
-.text-container p{
-    color:  hsl(0, 36%, 70%);
+  }
+  .text-container p {
+    color: hsl(0, 36%, 70%);
     width: 425px;
     line-height: 2;
     margin-top: 2.5rem;
-}
-b{
-    color:  hsl(0, 6%, 24%);
-}
-.hero-desktop-img{
+  }
+  b {
+    color: hsl(0, 6%, 24%);
+  }
+  .hero-desktop-img {
     height: 99.9vh;
     margin-left: 15rem;
-}
-.EMAIL{
+  }
+  .EMAIL {
     margin-top: 3rem;
     list-style-type: none;
     margin-bottom: 2rem;
     outline: none;
-    display: flex;
-
-}
-::placeholder{
-    color:  hsl(0, 36%, 70%);
-}
-.input-m{
+    position: relative;
+  }
+  ::placeholder {
+    color: hsl(0, 36%, 70%);
+  }
+  .input-m {
     width: 150%;
     height: 3rem;
     outline: none;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     padding-left: 1rem;
-    border: 1px solid  hsl(0, 36%, 70%);
+    border: 1px solid hsl(0, 36%, 70%);
     padding-right: 1rem;
-}
-button{
-    background:  hsl(0, 93%, 68%) ;
+  }
+  button {
+    background: hsl(0, 93%, 68%);
     border: none;
+    height: 50px;
     width: 55px;
-    position: static;
-    margin-top: -.1rem;
+    position: absolute;
+    right: 0;
+    transform: translate(-165px, -50px);
     border-radius: 40%;
     color: white;
-    display: inline-block;
-    font-weight: 700;
-    z-index: 2;
-    margin-left: -2rem;
-}
-button:hover{
-    background-color:  hsl(0, 36%, 70%);
+    margin-left: -5rem;
+  }
+  button:hover {
+    background-color: hsl(0, 36%, 70%);
     cursor: pointer;
-}
-.button{
+  }
+  .button {
     font-weight: 700;
     font-size: 15px;
-}
-.mobile-image{
+  }
+  .mobile-image {
     display: none;
-}
-#emailMsg {
+  }
+  #emailMsg {
     padding-left: 1rem;
     margin-top: 0.3rem;
-    
   }
   .input-container {
     position: relative;
@@ -127,18 +122,18 @@ button:hover{
     width: 100%;
     /* margin: 0 auto; */
     max-width: 400px;
-}
-.input-m {
+  }
+  .input-m {
     flex: 1;
-}
-.error-icon {
+  }
+  .error-icon {
     position: absolute;
-    right:  100px;
+    right: 100px;
     display: none;
-}
-
-.text-danger {
+  }
+  
+  .text-danger {
     margin-top: 5px;
     color: hsl(0, 93%, 68%);
     font-size: 1em;
-}
+  }

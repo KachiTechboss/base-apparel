@@ -46,9 +46,10 @@
     }
     .text-container h1{
         color:  hsl(0, 36%, 70%);
-        width: 100%;
+        width: 50%;
         letter-spacing: 15px;
         text-align: center;
+        margin-inline: auto;
         
     }
     .text-container p{
@@ -73,7 +74,6 @@
         list-style-type: none;
         margin-bottom: 2rem;
         outline: none;
-        display: flex;
         padding-left: 1.5rem;
     }
     ::placeholder{
@@ -90,19 +90,26 @@
         border: 1px solid  hsl(0, 36%, 70%);
         padding-right: 1rem;
     }
-    button{
-        background:  hsl(0, 93%, 68%) ;
+    .input-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-left: -1.5rem;
+        max-width: 400px;
+      }
+    button {
+        background: hsl(0, 93%, 68%);
         border: none;
+        height: 50px;
         width: 55px;
-        position: static;
-        margin-top: -.1rem;
+        position: absolute;
+        right: 0;
+        transform: translate(-30px, -50px);
         border-radius: 40%;
         color: white;
-        display: inline-block;
-        font-weight: 700;
-        z-index: 2;
-        margin-left: -2rem;
-    }
+        /* margin-left: -5rem; */
+      }
     .button{
         font-weight: 700;
         font-size: 15px;
